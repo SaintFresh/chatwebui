@@ -1,17 +1,22 @@
+// Importing React library
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// Importing ReactDOM library for rendering
+import ReactDOM from 'react-dom';
+
+// Importing the main App component
+import App from './app.js';
+
+// Importing the main styling file (optional at this stage)
+import './app.css';
+
+// Rendering the App component into the root element of the HTML
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Note: React.StrictMode is a tool for highlighting potential problems in an application.
+// It does not render any visible UI, and activates additional checks and warnings for descendants.
