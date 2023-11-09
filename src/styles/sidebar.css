@@ -1,0 +1,117 @@
+/* 
+  Summary: 
+  Styling for the sidebar container, configuration setting titles, sliders, numerical input boxes, and text areas.
+*/
+
+.sidebar-container {
+  width: 250px;
+  background-color: #ee0a0a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Shared styles for input fields and labels for consistency */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.input-field,
+.select-field {
+  width: calc(100% - 40px); /* Adjust width for padding */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.number-input {
+  display:flex;
+  height: 10px;
+  width: 60px; /* Set width for numerical input */
+  margin-left: auto; /* Align to the right */
+  padding: 10px;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.slider-label {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #001263;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-top: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #984caf;
+  cursor: pointer;
+}
+
+#system-role-label {
+  align-self: block;
+  margin-bottom: 5px;
+}
+
+#system-role-input {
+  min-height: 100px;
+  width: calc(100% - 20px); /* Adjust width for padding */
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle-sidebar-button {
+  padding: 10px 20px;
+  margin-top: auto;
+}
+
+/* If any redundancy is found or adjustments needed, they are made here */
+/* Additional utility classes can be created to avoid redundancy */
+.utility-padding {
+  padding: 0 10px;
+}
+
+.utility-margin {
+  margin: 10px 0;
+}
+
+.utility-width {
+  width: calc(100% - 40px);
+}
